@@ -1,0 +1,33 @@
+.car-insert {
+  display: flex;
+  text-align: center;
+  margin: 3px 6px;
+}
+
+.car-insert input {
+  flex: 2;
+  margin: 10px 3px;
+  padding: 5px 6px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.car-insert input:focus {
+  background-color: #eee;
+}
+
+.btn-save {
+  flex: 1;
+  background-color: darkolivegreen;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 3px 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-save:hover {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}

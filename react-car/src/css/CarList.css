@@ -1,0 +1,26 @@
+.car-list {
+  width: 95%;
+  border-collapse: collapse;
+  border: none;
+  margin: 10px auto;
+}
+
+.car-list thead {
+  background-color: #ddd;
+}
+
+.car-list th,
+.car-list td {
+  padding: 5px;
+  font-weight: normal;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.division {
+  cursor: pointer;
+}
+
+.division:hover {
+  color: red;
+}
