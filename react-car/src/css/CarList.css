@@ -24,3 +24,7 @@
 .division:hover {
   color: red;
 }
+
+.car-list tbody tr:hover {
+  background-color: #eee;
+}

@@ -4,7 +4,7 @@ import CarItem from "./CarItem";
 
 class CarList extends Component {
   render() {
-    const { carList, handleDivClick } = this.props;
+    const { carList, handleDivClick, updateItem } = this.props;
     const carItemList = carList.map((item, index) => {
       return (
         <CarItem
@@ -12,6 +12,7 @@ class CarList extends Component {
           index={index}
           car={item}
           handleDivClick={handleDivClick}
+          updateItem={updateItem}
         />
       );
     });

@@ -52,7 +52,8 @@ class CarMain extends Component {
   handleDivClick = (id) => {
     const selectDivision = this.state.carList.map((item) => {
       if (item.id === Number(id)) {
-        const division = item.division + 1;
+        // 구분란의 내용을 결정하는 변수
+        const division = (item.division + 1) % 4;
         return {
           ...item,
           division: division,
@@ -64,13 +65,19 @@ class CarMain extends Component {
     this.setState({ carList: selectDivision });
   };
 
+  updateItem = (id) => {};
+
   render() {
     const { carList } = this.state;
-    const { carInsert, handleDivClick } = this;
+    const { carInsert, handleDivClick, updateItem } = this;
     return (
       <div>
         <CarInsert carInsert={carInsert} />
-        <CarList carList={carList} handleDivClick={handleDivClick} />
+        <CarList
+          carList={carList}
+          handleDivClick={handleDivClick}
+          updateItem={updateItem}
+        />
       </div>
     );
   }
